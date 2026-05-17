@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas CSS Layout</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+}
+
+.container{
+display:grid;
+grid-template-columns:1fr 2fr 1fr;
+grid-template-rows:100px 300px 80px;
+gap:10px;
+padding:10px;
+}
+
+.header{
+background-color:lightblue;
+grid-column:1/4;
+text-align:center;
+padding:35px;
+}
+
+.sidebar{
+background-color:lightgreen;
+text-align:center;
+padding-top:130px;
+}
+
+.content{
+background-color:lightgray;
+text-align:center;
+padding-top:130px;
+}
+
+.menu{
+background-color:lightpink;
+text-align:center;
+padding-top:130px;
+}
+
+.footer{
+background-color:orange;
+grid-column:1/4;
+text-align:center;
+padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Header</h2>
+</div>
+
+<div class="sidebar">
+<h3>Sidebar</h3>
+<p>Menu navigasi website</p>
+</div>
+
+<div class="content">
+<h3>Content</h3>
+<p>Isi utama halaman web</p>
+</div>
+
+<div class="menu">
+<h3>Menu</h3>
+<p>Informasi tambahan</p>
+</div>
+
+<div class="footer">
+<h2>Footer</h2>
+<p>Copyright 2026</p>
+</div>
+
+</div>
+
+</body>
+</html>
